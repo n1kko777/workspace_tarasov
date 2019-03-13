@@ -889,7 +889,7 @@ footer hr {
   padding-bottom: 18px;
 }
 
-
+/* Адаптивная вертска */
 /* Media queries */
 @media screen and (max-width: 960px) {
   .menu {
