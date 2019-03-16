@@ -1,0 +1,147 @@
+/* SECTION map */
+.map {
+  position: relative;
+  padding-top: 175px;
+}
+
+.map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 700px;
+  z-index: 1;
+}
+
+.callback {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 30px;
+  position: relative;
+  z-index: 10;
+  margin: -29px auto;
+  max-width: 562px;
+  min-height: 525px;
+  background-color: rgb(230, 103, 104);
+}
+
+.callback:after {
+  content: '';
+  display: block;
+  width: 88px;
+  height: 8px;
+  background-color: $yellowColor;
+  position: absolute;
+  top: 0;
+  left: calc(50% - 44px);
+}
+
+.callback__ttl {
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+
+.callback__text,
+.callback a {
+  margin: 0 auto;
+  max-width: 235px;
+  text-decoration: none;
+  display: block;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.31;
+  letter-spacing: normal;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.callback a:hover {
+  text-decoration: underline;
+}
+
+a.callback-phone {
+  font-size: 17px;
+}
+
+.callback__input {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.callback__input input,
+.callback textarea {
+  background-color: transparent;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 222px;
+  height: 45px;
+  border: solid 1px rgba(255, 255, 255, 0.6);
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.31;
+  letter-spacing: normal;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  padding-top: 15px;
+  padding-bottom: 16px;
+  padding-left: 20px;
+}
+
+.callback textarea {
+  display: block;
+  width: 100%;
+  margin-top: 18px;
+  min-height: 125px;
+  margin-bottom: 29px;
+}
+
+.callback__input input::-webkit-input-placeholder,
+.callback textarea::-webkit-input-placeholder {
+  color: rgb(255, 255, 255);
+}
+
+.callback__input input:-ms-input-placeholder,
+.callback textarea:-ms-input-placeholder {
+  color: rgb(255, 255, 255);
+}
+
+.callback__input input::-ms-input-placeholder,
+.callback textarea::-ms-input-placeholder {
+  color: rgb(255, 255, 255);
+}
+
+.callback__input input::placeholder,
+.callback textarea::placeholder {
+  color: rgb(255, 255, 255);
+}
+
+.callback-submit {
+  outline: none;
+  width: 70px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  margin: 0 auto;
+  position: relative;
+  cursor: pointer;
+}

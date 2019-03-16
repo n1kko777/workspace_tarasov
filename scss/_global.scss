@@ -1,0 +1,101 @@
+/* Аналог display: none; */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+}
+
+/* Animation keyframes */
+@keyframes shake {
+
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes scalling {
+  0% {
+    transform: scale(0.5);
+  }
+
+  100% {
+    transform: scale(1.5);
+  }
+}
+
+@keyframes coloring {
+  0% {
+    color: #fff;
+  }
+
+  100% {
+    color: $deepYellowColor;
+  }
+}
+
+
+body {
+  font-family: "Lato", sans-serif;
+  letter-spacing: normal;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1140px;
+  width: 98%;
+}
+
+section:not(:first-child):not(:last-child)::before {
+  content: '';
+  display: block;
+  width: 88px;
+  height: 8px;
+  background-color: $yellowColor;
+  margin: 0 auto;
+}
+
+h3 {
+  font-size: 35px;
+  line-height: 1.11;
+  text-align: center;
+  color: $yellowColor;
+  padding-top: 79px;
+  padding-bottom: 80px;
+}
+
+
+h3 span {
+  font-weight: bold;
+}
