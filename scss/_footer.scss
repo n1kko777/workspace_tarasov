@@ -1,0 +1,62 @@
+/* SECTION footer */
+footer {
+  padding-top: 56px;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.76);
+}
+
+.scrolltop {
+  position: absolute;
+  right: 3%;
+  bottom: 50px;
+  width: 36px;
+  height: 35px;
+  border: solid 1px $yellowColor;
+  background-color: rgb(61, 61, 61);
+  color: $yellowColor;
+  font-size: 14px;
+  -webkit-transition: color $trsTime,
+    border-color $trsTime;
+  transition: color $trsTime,
+    border-color $trsTime;
+  cursor: pointer;
+}
+
+.scrolltop:hover {
+  color: #fff;
+  border-color: #fff;
+}
+
+footer .menu {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+footer .menu li a {
+  height: auto;
+  line-height: 1;
+  padding-bottom: 20px;
+  border-bottom: 6px solid transparent;
+}
+
+footer hr {
+  margin: 0;
+  display: block;
+  width: 100%;
+  height: 0;
+  border-top: 1px solid rgba(201, 201, 201, 0.11);
+}
+
+.copyright {
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.15;
+  letter-spacing: normal;
+  text-align: center;
+  color: rgb(145, 145, 145);
+  margin-top: 20px;
+  padding-bottom: 18px;
+}
